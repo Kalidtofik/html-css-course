@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    button {
+      margin-top: 100px;
+      margin-left: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0071FF;
+      border: none;
+      height: 150px;
+      width: 150px;
+      font-weight: 700px;
+      color: white;
+      cursor: pointer;
+      animation-name: spin;
+      animation-duration: 3s;
+      animation-delay: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      animation-play-state: running;
+      margin-bottom: 300px;
+    }
+
+    .button:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes spin {
+      0% {
+
+      }
+
+      50% {
+        scale: 2;
+      }
+
+      100% {
+        transform: rotate(360deg);
+        border-radius: 50%;  /* to make circle*/
+      }
+    }
+
+    /*loading css*/
+    .loading {
+      height: 50px;
+      width: 50px;
+      border: 6px solid aqua;
+      border-radius: 4px;
+      box-shadow: 0 0 8px aqua, 0 0 0 aqua inset;
+      translate: 50% -50%;
+      margin-left: 200px;
+      z-index: 10;
+      animation-name: loading;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+    }
+
+    .loading:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes loading {
+      0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+      }
+
+      33% {
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
+      }
+
+      67% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+      }
+
+      100% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+      }
+    }
+
+  </style>
+</head>
+<body style="background: rgb(17, 22, 34);">
+  <div class="button">
+    <button class="button">Pr Kalid Tofik</button>
+  </div>
+  <div class="loading">
+
+  </div>
+</body>
+</html>
+

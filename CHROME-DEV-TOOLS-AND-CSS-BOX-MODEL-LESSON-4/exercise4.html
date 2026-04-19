@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    .greet {
+      font-family: Arial;
+      font-size: 80px;
+      text-align: center;
+      color: white;
+      animation-name: greet;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes greet {
+      0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+      }
+
+      33% {
+        transform: rotateX(180deg) rotateY(0) rotateZ(0);
+      }
+
+      67% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+      }
+
+      100% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+      }
+    }
+
+  </style>
+</head>
+<body style="background: rgb(15, 24, 33);">
+  <h1 class="greet">Welcome to CSS Animation</h1>
+</body>
+</html>
+
+
