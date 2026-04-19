@@ -1,0 +1,14 @@
+    .amazon-shop-link {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    .amazon-shop-link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: white;
+    }
+
+    .amazon-shop-link:active {
+      color: green;
+    }

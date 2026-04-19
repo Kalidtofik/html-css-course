@@ -1,0 +1,193 @@
+    .subscribe-button {
+      background-color: rgb(194, 0, 0);
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(194, 0, 0);
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 2px;
+      cursor: pointer;
+      vertical-align: top;
+      transition: transform 0.08s ease-in-out;
+    }
+
+    .subscribe-button:hover {
+      background-color: rgb(128, 12, 12);
+      transform: scale(1.02);
+    }
+
+    .subscribe-button:active {
+      opacity: 0.75;
+      transform: scale(0.95);
+    }
+
+    /* Join button CSS*/
+    .join-button {
+      color: rgb(11, 90, 164);
+      border-color: rgb(11, 90, 164);
+      border-style: solid;
+      border-width: 1px;
+      padding: 5px 10px;
+      cursor: pointer;
+      vertical-align: top;
+      margin-left: 10px;
+      transition: transform 0.08s ease-in-out;
+    }
+
+    .join-button:hover {
+      background-color: rgb(18, 105, 234);
+      color: white;
+      transform: scale(1.02);
+    }
+
+    .join-button:active {
+      opacity: 0.75;
+      transform: scale(0.95);
+    }
+
+    .tweet-button {
+      color: white;
+      background-color: rgb(17, 125, 214);
+      border: none;
+      padding: 6px 12px;
+      border-radius: 14px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: transform 0.08s ease-in-out;
+    }
+
+    .tweet-button:hover {
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+      background-color: rgb(8, 100, 175);
+      transform: scale(1.02);
+    }
+
+    .tweet-button:active {
+      opacity: 0.75;
+      transform: scale(0.95);
+    }
+
+    .page {
+      padding: 12px 20px;
+      border: none;
+      background: rgb(134, 203, 233);
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    /* Back button */
+    .back-button {
+      background: rgb(61, 162, 217);
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      /* 3D effect*/
+      box-shadow: 0 3px 0 rgb(7, 97, 133);
+      transition: transform 0.1s ease;
+    }
+
+    .back-button:hover {
+      background: #3eb1ef;
+      transform: rotate(-45deg);
+    }
+
+    .back-button:active {
+      transform: translateY(5px);
+      box-shadow: 0 0 0 #21618c;
+    }
+
+    /* 1 button */
+    .page1 {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .page1:hover {
+      transform: translateY(10px);
+    }
+
+    .page2 {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .page2:hover {
+      transform: translateY(-10px);
+    }
+
+    .page2:active {
+      transform: translateY(10px);
+    }
+
+    .page3 {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .page3:hover {
+      transform: translateY(10px);
+    }
+
+    .page3:active {
+      transform: translateY(-10px);
+    }
+
+    .go-button {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 0 rgb(239, 90, 36);
+      transition: 0.2s ease;
+    }
+
+    .go-button:hover {
+      transform: scale(1.05);
+    }
+
+    .go-button:active {
+      transform: translateY(4px);
+      box-shadow: 0 0 0 black;
+    }
+
+    .stop-button {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: 0.05s;
+    }
+
+    .stop-button:hover {
+      transform: translateY(-3px);
+    }
+
+    .stop-button:active {
+      transform: translateY(3px);
+    }
+
+    .reset-button {
+      background-color: #f77e14;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      transform-origin: left;
+      transform-box: border-box;
+    }
+
+    .reset-button:hover {
+      transform: scaleX(1.3) translateY(1.1px);
+    }

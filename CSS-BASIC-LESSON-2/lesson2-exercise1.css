@@ -1,0 +1,51 @@
+    .uber-request-button {
+      background-color: black;
+      color: white;
+      border: none;
+      height: 36px;
+      width: 110px;
+      cursor: pointer;
+    }
+
+    .amazon-cart-button {
+      margin-left: 30px;
+      background-color: rgb(255, 216, 20);
+      border: none;
+      height: 30px;
+      width: 140px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .linkedIn-apply-button {
+      background-color: rgb(10, 102, 194);
+      color: white;
+      border: none;
+      height: 30px;
+      width: 194px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    .linkedIn-save-button {
+      color: rgb(10, 102, 194);
+      background-color: white;
+      border-color: rgb(10, 102, 194);
+      border-width: 1px;
+      border-style: solid;
+      height: 30px;
+      width: 60px;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* I use div to make easily understood that they are found on the same buttons */
+
+    .linkedIn-apply-save-container {
+      background-color: rgb(198, 198, 198);
+      padding: 10px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }

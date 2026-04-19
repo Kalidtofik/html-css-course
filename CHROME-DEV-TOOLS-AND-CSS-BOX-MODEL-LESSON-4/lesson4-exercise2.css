@@ -1,0 +1,91 @@
+    .scene {
+      perspective: 800px;
+      margin-left: 100px;
+      margin-top: 100px;
+      margin-bottom: 300px;
+    }
+
+    .cube {
+      --size: 100px;
+      width: var(--size);
+      height: var(--size);
+      transform-style: preserve-3d;
+      position: relative;
+      cursor: pointer;
+      transition: 5s ease;
+    }
+
+    .cube:hover {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+
+    .face {
+      position: absolute;
+      width: var(--size);
+      height: var(--size);
+      color: rgb(150, 255, 230);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      background: orangered;
+      border: 1px solid black;
+      transition: background-color 1s ease;
+    }
+
+    .face:hover {
+      background-color: rgb(112, 220, 11);
+    }
+
+    .front {transform: translateZ(calc(var(--size) / 2));}
+    .back {transform: rotateY(180deg) translateZ(calc(var(--size) / 2));}
+    .right {transform: rotateY(90deg) translateZ(calc(var(--size) / 2));}
+    .left {transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));}
+    .top {transform: rotateX(90deg) translateZ(calc(var(--size) / 2));}
+    .bottom {transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));}
+    
+    /*Diamond Style*/
+    .parent {
+      perspective: 800px;
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+
+    .diamond {
+      --sizeDiamond: 100px;
+      width: var(--sizeDiamond);
+      height: var(--sizeDiamond);
+      position: relative;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      transform: rotateX(90deg) rotateY(45deg);
+      transition: transform 5s ease;
+    }
+
+    .diamond:hover {
+      transform: rotateX(270deg) rotateY(45deg);
+    }
+
+    .faces {
+      position: absolute;
+      background: rgb(0, 202, 198);
+      width: var(--sizeDiamond);
+      height: var(--sizeDiamond);
+      border: 1px solid black;
+      transition: all 1s ease-in-out;
+    }
+
+    .faces:hover {
+      background: rgb(255, 162, 0);
+      color: orangered;
+    }
+
+    .front-side {transform: translateZ(calc(var(--sizeDiamond) / 2));}
+
+    .back-side {transform: rotateY(180deg) translateZ(calc(var(--sizeDiamond) / 2));}
+
+    .right-side {transform: rotateY(90deg) translateZ(calc(var(--sizeDiamond) / 2));}
+    
+    .left-side {transform: rotateY(-90deg) translateZ(calc(var(--sizeDiamond) / 2));}
+
+    .top-side {transform: rotateX(90deg) translateZ(calc(var(--sizeDiamond) / 2));}
+
+    .bottom-side {transform: rotateX(-90deg) translateZ(calc(var(--sizeDiamond) / 2));}

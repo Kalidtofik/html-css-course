@@ -1,0 +1,121 @@
+    .uber-request-button {
+      background-color: black;
+      color: white;
+      border: none;
+      height: 36px;
+      width: 110px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .uber-request-button:hover {
+      opacity: 0.88;
+    }
+
+    .uber-request-button:active {
+      opacity: 0.75;
+    }
+
+    .amazon-cart-button {
+      background-color: rgb(255, 216, 20);
+      border: none;
+      height: 28px;
+      width: 105px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.15s, black 0.15s;
+    }
+
+    .amazon-cart-button:hover {
+      background-color: rgb(235, 190, 9);
+      color: black;
+    }
+
+    .amazon-cart-button:active {
+      opacity: 0.75;
+    }
+
+    .amazon-buy-button {
+      background-color: rgb(232, 146, 16);
+      border: none;
+      height: 28px;
+      width: 105px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.15s, black 0.15s;
+    }
+
+    .amazon-buy-button:hover {
+      background-color: rgb(205, 101, 4);
+      color: black;
+    }
+
+    .amazon-buy-button:active {
+      opacity: 0.75;
+    }
+
+    .linkedIn-apply-button {
+      background-color: rgb(10, 102, 194);
+      color: white;
+      border: none;
+      height: 30px;
+      width: 194px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .linkedIn-apply-button:hover {
+      background-color: rgb(5, 56, 127);
+      color: white;
+    }
+
+    .linkedIn-apply-button:active {
+      opacity: 0.75;
+    }
+
+    .linkedIn-save-button {
+      color: rgb(10, 102, 194);
+      background-color: white;
+      border-color: rgb(10, 102, 194);
+      border-width: 1px;
+      border-style: solid;
+      height: 30px;
+      width: 60px;
+      border-radius: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .linkedIn-save-button:hover {
+      background-color: rgb(208, 222, 235);
+      color: rgb(10, 102, 194);
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .linkedIn-save-button:active {
+      opacity: 0.7;
+    }
+
+    /* I use div to make easily understood that they are found on the same buttons */
+
+    .linkedIn-apply-save-container {
+      background-color: rgb(198, 198, 198);
+      padding: 10px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    .amazon-button-link:visited {
+      color: purple;
+    }
+
+    .amazon-button-link:hover {
+      color: rgb(142, 71, 0);
+    }
+
+    .amazon-button-link:active {
+      color: rgb(1, 98, 1);
+    }
