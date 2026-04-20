@@ -3,25 +3,203 @@
       font-size: 80px;
       text-align: center;
       color: white;
+      cursor: pointer;
+      margin-bottom: 300px;
       animation-name: greet;
       animation-duration: 3s;
+      animation-delay: 1s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
       animation-iteration-count: infinite;
     }
 
     @keyframes greet {
       0% {
-        transform: rotateX(0) rotateY(0) rotateZ(0);
+
       }
 
-      33% {
-        transform: rotateX(180deg) rotateY(0) rotateZ(0);
-      }
-
-      67% {
-        transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+      50% {
+        transform: rotate(360deg);
       }
 
       100% {
-        transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg)
+        transform: scale(1.05);
       }
     }
+
+/* Anime on scroll */
+
+.block {
+  border: 5px solid aqua;
+  display: inline-block;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+#block1 {
+  background: orange;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+#block2 {
+  background: white;
+  width: 1040px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block3 {
+  background: red;
+  width: 1140px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+#block4 {
+  background: green;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block5 {
+  background: purple;
+  width: 900px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+#block6 {
+  background: azure;
+  width: 640px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block7 {
+  background: saddlebrown;
+  width: 900px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+#block8 {
+  background: violet;
+  width: 640px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block9 {
+  background: mediumblue;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+}
+
+#block10 {
+  background: khaki;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+}
+
+#block11 {
+  background: cadetblue;
+  width: 430px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block12 {
+  background: aqua;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+}
+
+#block13 {
+  background: #9acd32;
+  width: 100px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+}
+
+#block14 {
+  background: rgb(48, 53, 96);
+  width: 730px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block15 {
+  background: saddlebrown;
+  width: 620px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+#block16 {
+  background: gold;
+  width: 350px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+#block17 {
+  background: palevioletred;
+  width: 560px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+#block18 {
+  background: oldlace;
+  width: 950px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+#block19 {
+  background: indianred;
+  width: 595px;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+#block20 {
+  background: salmon;
+  width: 1658px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
